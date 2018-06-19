@@ -28,5 +28,15 @@ public class LayoutController {
 		model.addAttribute("pageName", "details");
 		return "interface/layouts"; 
 	}
+	@RequestMapping(value = {"/checkout"}, method = RequestMethod.GET)
+	public String checkout(Model model) {
+		model.addAttribute("pageName", "checkout");
+		return "interface/layouts"; 
+	}
+	@RequestMapping(value = {"/account"}, method = RequestMethod.GET)
+	public String account(Model model) {
+		model.addAttribute("pageName", "account");
+		return "interface/layouts"; 
+	}
 
 }
