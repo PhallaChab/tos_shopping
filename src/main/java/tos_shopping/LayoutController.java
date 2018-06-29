@@ -38,5 +38,11 @@ public class LayoutController {
 		model.addAttribute("pageName", "account");
 		return "interface/layouts"; 
 	}
+	
+	@RequestMapping(value = {"/admin"}, method = RequestMethod.GET)
+	public String admin(Model model) {
+		model.addAttribute("pageName", "index");
+		return "admin/layouts"; 
+	}
 
 }
